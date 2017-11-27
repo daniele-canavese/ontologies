@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="it.polito.security.ontologies.builtins">
+      <builtin
+            class="it.polito.security.ontologies.samples.CustomBuiltIn"
+            name="http://security.polito.it/ontologies/swrl#something">
+      </builtin>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="it.polito.security.ontologies.samples"
+            class="it.polito.security.ontologies.samples.SamplesPackage"
+            genModel="xcore/model.xcore"/>
+   </extension>
+
+</plugin>
